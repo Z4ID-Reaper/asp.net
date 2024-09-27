@@ -25,15 +25,20 @@ value type is stored in the stack and reference values are stored in the heap wh
 
 1. type conversion
 	*implicit 
+		example:-
+		int intValue = 42;
+		double doubleValue = intValue; // Implicit conversion from int to double
+
 	*explicit 
+		you have to use cast operators
 
 operators (to operate on the data types)
-	arthematic
-	logical
-	relational
-	assignment
-	miscellaneous
-	bitwise 
+	arthematic + - * / % ++ --
+	logical && || !
+	relational == !== > < >= <=
+	assignment = += -= *= /= %= <<= >>= &= ^= |= 
+	miscellaneous sizeof() typeof() (&)address ?: is as
+	bitwise & | ^ ~ << >>
 	
 
 literals
