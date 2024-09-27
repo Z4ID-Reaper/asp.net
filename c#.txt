@@ -1,0 +1,54 @@
+C# is a statically typed programming language developed my Microsoft
+
+data types 
+
+	#value type 
+		Boolean 
+		character
+		integer
+
+	#reference type 
+		pointer 
+		array
+		strings
+		object (boxing and unboxing)and dynamic
+
+value type is stored in the stack and reference values are stored in the heap while there pointer stored in the stack pointing to that value in the heap
+
+1. type conversion
+	*implicit 
+	*explicit 
+
+operators (to operate on the data types)
+	arthematic
+	logical
+	relational
+	assignment
+	miscellaneous
+	bitwise 
+	
+
+literals
+	integer 
+	floating point
+	character
+	string
+
+
+programming paradigms
+	procedural
+	functional
+	logical 
+	oops
+
+
+variables
+methods/functions		(i can declare a thing and assign value to it and then use that value in program)
+class
+objects
+
+
+
+ 
+
+
