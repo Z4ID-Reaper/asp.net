@@ -7,13 +7,20 @@ data types
 		character
 		integer
 
-	#reference type 
-		pointer 
+1bit 	1byte	2byte	   4byte	8byte	16byte	           (* = singned and unsigned)
+bool	*byte	char       *int     	*long	
+		*short      float	double  decimal
+		
+	#reference type  
 		array
+		collection
 		strings
-		object (boxing and unboxing)and dynamic
-	#pointer type
+		object (boxing:value type to object type and unboxing)and dynamic
+		user defined (class , interface , delegate)
 
+	#pointer type
+		type* identifier = &variable (assign)
+		*indetifier 		     (ascess)
 value type is stored in the stack and reference values are stored in the heap while there pointer stored in the stack pointing to that value in the heap
 
 1. type conversion
