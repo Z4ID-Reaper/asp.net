@@ -12,6 +12,7 @@ data types
 		array
 		strings
 		object (boxing and unboxing)and dynamic
+	#pointer type
 
 value type is stored in the stack and reference values are stored in the heap while there pointer stored in the stack pointing to that value in the heap
 
@@ -46,6 +47,7 @@ variables
 methods/functions		(i can declare a thing and assign value to it and then use that value in program)
 class
 objects
+
 
 
 
