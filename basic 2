@@ -12,12 +12,146 @@ file I/O
 
 
 array
+	set of same data types
+	array is a reference type so use the "new" keyword to create and instance of the array
 struct
+	struct <name>{
+	
+	};
+	can have methods,fields,indexers,properties,operator,events
 enum 
+	enum<name>{
+	
+	};
 class
 interface
+	Public Interface <name>{
+	
+	};
 namespace
+	namespacs <name>{
+	
+	};
+
+namespace.<itemname>; 
+	can be nested,keeps set of namespaces saperate to resolve class nameing conflicts 
 preprocessor directive
+
 regex
+	pattern that could be matched against an input text with the help of regex engine
+
 exception handling
+	it responds to an exceptional circumstance that arises while a program is running
+	code with a try catch block is called protected code
+try{
+//statement causing exeption
+} catch(exeption name){
+	error handling code
+}catch(exeption name{
+	error handling code
+}finally{
+ //statement to be executed
+}Catch(Exception e) {
+   ...
+   Throw e
+}
+
+
 file I/O
+A file is a collection of data stored in a disk with a specific name and a directory path. When a file is opened for reading or writing, it becomes a stream.The input stream is used for reading data from file (read operation) and the output stream is used for writing into the file (write operation).
+
+// Array
+// A set of the same data types.
+// Array is a reference type, so use the "new" keyword to create an instance of the array.
+int[] numbers = new int[5]; // Creating an array of integers with 5 elements
+
+// Struct
+// Structs can have methods, fields, indexers, properties, operators, and events.
+struct Point {
+    public int X;
+    public int Y;
+    public void Display() {
+        Console.WriteLine($"X: {X}, Y: {Y}");
+    }
+}
+
+// Enum
+// Enums define a set of named constants.
+enum Days {
+    Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+}
+
+// Class
+// A blueprint for creating objects with fields, properties, methods, and events.
+class Person {
+    public string Name { get; set; }
+    public void Greet() {
+        Console.WriteLine($"Hello, my name is {Name}");
+    }
+}
+
+// Interface
+// Public interface defines a contract with methods and properties, but no implementations.
+public interface IShape {
+    double Area();
+    double Perimeter();
+}
+
+// Namespace
+// Namespaces keep sets of related classes, interfaces, structs, and enums separate to resolve class naming conflicts.
+namespace MyNamespace {
+    class MyClass {
+        // Class code here
+    }
+}
+// Namespaces can be nested.
+// Example: namespace.MyNamespace.MyClass;
+
+// Preprocessor Directive
+// Instructions to the compiler to preprocess the source code before compilation.
+#define DEBUG
+#if DEBUG
+    Console.WriteLine("Debug mode");
+#endif
+
+// Regex (Regular Expressions)
+// A pattern that can be matched against an input text with the help of a regex engine.
+using System.Text.RegularExpressions;
+string pattern = @"\d+";
+string input = "123 abc";
+Match match = Regex.Match(input, pattern);
+if (match.Success) {
+    Console.WriteLine($"Matched: {match.Value}");
+}
+
+// Exception Handling
+// Responds to exceptional circumstances that arise while a program is running.
+// Code with a try-catch block is called protected code.
+try {
+    // Statement causing exception
+} catch (Exception e) {
+    // Error handling code
+    Console.WriteLine(e.Message);
+} catch (AnotherException e) {
+    // Error handling code
+} finally {
+    // Statements to be executed regardless of an exception
+}
+
+// File I/O
+// A file is a collection of data stored on a disk with a specific name and a directory path.
+// When a file is opened for reading or writing, it becomes a stream. The input stream is used for reading data from the file (read operation), and the output stream is used for writing into the file (write operation).
+using System.IO;
+
+// Reading from a file
+using (StreamReader reader = new StreamReader("file.txt")) {
+    string content = reader.ReadToEnd();
+    Console.WriteLine(content);
+}
+
+// Writing to a file
+using (StreamWriter writer = new StreamWriter("file.txt")) {
+    writer.WriteLine("Hello, world!");
+}
+
+
