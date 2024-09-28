@@ -15,7 +15,8 @@ bool	*byte	char       *int     	*long
 		array
 		collection
 		strings
-		object (boxing:value type to object type and unboxing)and dynamic
+		object (boxing: value type to object type and unboxing: object type to value type (both occur at runtime)
+		dynamic (checking at runtime)
 		user defined (class , interface , delegate)
 
 	#pointer type
@@ -35,17 +36,50 @@ value type is stored in the stack and reference values are stored in the heap wh
 operators (to operate on the data types)
 	arthematic + - * / % ++ --
 	logical && || !
-	relational == !== > < >= <=
+	relational == != > < >= <=
 	assignment = += -= *= /= %= <<= >>= &= ^= |= 
 	miscellaneous sizeof() typeof() (&)address ?: is as
 	bitwise & | ^ ~ << >>
 	
 
-literals
+constants/literals
+
+syntax : const <data_type> <const_name> = <value>
 	integer 
+		decimal  : base10
+		hexadecimal : base16 prefix (0x, 0X)
+		sufixes : U ,L for unsigned and long
 	floating point
-	character
+		integer part
+		decimal point			(ex:  6.345e-15)
+ 		fraction part
+		exponent part (e , E)
+	character constant
+		enclosed in ''
+		plain character 
+		universal characters
+			\u or \U for Unicode characters.
+		escape sequence
+			Escape sequence		Meaning
+			\\			\ character
+			\'			' character
+			\"			" character
+			\?			? character
+			\a			Alert or bell
+			\b			Backspace
+			\f			Form feed
+			\n			Newline
+			\r			Carriage return
+			\t			Horizontal tab
+			\v			Vertical tab
+			\xhh . . .		Hexadecimal number of one or more digits
+		
 	string
+		enclosed in "" or @""
+		whitespace
+		it has literals similar to character constants like plain characters , escape sequence , universal charac.
+		
+	enumeration
 
 
 programming paradigms
